@@ -3,27 +3,46 @@
 </script>
 
 <template>
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="./core/assets/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./core/assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <div class="common-layout">
-    <el-container>
-      <el-header>Header</el-header>
-      <el-main>Main</el-main>
-      <el-footer>Footer</el-footer>
-    </el-container>
-  </div>
+  <header>
+    <div>
+        <a href="https://vite.dev" target="_blank">
+          <img src="./core/assets/vite.svg" class="logo" alt="Vite logo" />
+        </a>
+        <a href="https://vuejs.org/" target="_blank">
+          <img src="./core/assets/vue.svg" class="logo vue" alt="Vue logo" />
+        </a>
+      </div>
+  </header>
+  <main></main>
+  <footer><div>
+        <a href="https://vite.dev" target="_blank">
+          <img src="./core/assets/vite.svg" class="logo" alt="Vite logo" />
+        </a>
+        <a href="https://vuejs.org/" target="_blank">
+          <img src="./core/assets/vue.svg" class="logo vue" alt="Vue logo" />
+        </a>
+      </div>
+  </footer>
 
 </template>
 
-<style scoped>
+<style lang="scss">
+#app {
+  height: 100%;
+	display: flex;
+	flex-direction: column;
+
+  main {
+    flex: 1;
+    overflow: auto;
+  }
+
+  header, footer {
+    background-color: #1a47b8;
+  }
+}
+
 .logo {
-  height: 6em;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
