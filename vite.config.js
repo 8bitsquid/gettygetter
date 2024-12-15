@@ -21,5 +21,8 @@ export default defineConfig({
         additionalData: `@use "./core/style.scss";`
       }
     }
+  },
+  test: {
+    setupFiles: ['./vitest.setup.js']
   }
 })
