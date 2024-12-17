@@ -23,7 +23,7 @@ From the browser, the user submits a search string in the app. Submitting trigge
 ### Just Follow the READMEs
 The source may be best read from Github, as you can follow the links in the `README` files. Each `REAMDE.md` describes the general purpose, layout, etc..., of the files in the same directory and typically links to other `README`s. For implementation details, check the comments in the source files.
 
-This [src/README](src/README.md) is a good place to start.
+The [src/README](src/README.md) is a good place to start.
 
 ## Running the App
 
