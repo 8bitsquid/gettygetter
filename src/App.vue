@@ -46,7 +46,7 @@ async function runSearch(searchTerms) {
         :ellipsis="false"
       >
         <el-menu-item index="0" class="header-title">
-          Gett Getter
+          Getty Getter
         </el-menu-item>
         <el-menu-item index="1">
           <img src="./core/assets/github-mark.svg" target="_blank" class="logo github" alt="Github logo" />
