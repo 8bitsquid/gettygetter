@@ -46,7 +46,7 @@ $ npm run test
 
 ### Time's up
 
-Ok, total dev time was more ~10hrs. But be honest, I've had many ~~10hr days before.
+Ok, total dev time was more ~10hrs. But to be honest, I've had many ~~10hr days before.
 
 ### Unused Parts
 The app is complete and runnabnle. However, new toys tempted scope creep, and I started pre-planning other features. 
