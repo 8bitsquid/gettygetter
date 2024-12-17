@@ -1,6 +1,6 @@
 # Getty GETter
 
-This project represents my first attempt at building a Vue 3 application and is my code sample submission to members of the search committee and Collections Platforms & Data department at [the Getty Research Institute]([https://www.getty.edu/](https://www.getty.edu/research/)). Documented in a semi "code-journaling" style, the READMEs and code comments found throughout will hopefully clarify my reasoning in the app's design. The repo is intended for a limited audience and the docs assume the reader is familiar with [Vue](https://vuejs.org/) and [Vite](https://vite.dev/).
+This project represents my first attempt at building a Vue 3 application and is my code sample submission to members of the search committee and Collections Platforms & Data department at [the Getty Research Institute]([https://www.getty.edu/](https://www.getty.edu/research/)). Documented in a "code-journaling" style, the READMEs and code comments found throughout will hopefully clarify my reasoning in the app's design. The repo is intended for a limited audience and the docs assume the reader is familiar with [Vue](https://vuejs.org/) and [Vite](https://vite.dev/).
 
 If you'd like to skip the pre-amble and get straight to the docs, See *[Reading the source](#reading-the-source)*. 
 
@@ -44,26 +44,43 @@ $ npm run test
 
 ## Lessons Learned
 
-### Unused Parts
-The app is mostly complete, with only one unused composable from my original plans - the [pagination composable](src/core/composables//pagination.js).
+### Time's up
 
-It would have been nice to implement the [query](src/query) app module to allow submitting SPARQL query directly, but I left a sample component in that module location to show how we can add new modules to the app.
+Ok, total dev time was more ~10hrs. But be honest, I've had many ~~10hr days before.
+
+### Unused Parts
+The scoped app is componplete and runnabnle. However, the new toys tempted scope creep, and I started pre-planning other features. 
+I left the stubs for these features in for context and hopefully they'll serve as examples of how I would add new modules.
+
+* [pagination composable](src/core/composables//pagination.js) to handle paging state for a pagination component.
+* The [query](src/query) top level module would allow submitting SPARQL queries directly.
 
 ### Too many toys
 As with many modern apps, the number of tools and frameworks used may inflate dev time if breaking chagings come down the line. Learning the tools and having templated configsnd scaffolding is key to reducing toil. 
 
-Of the frameworks I used, hoping to create short-cuts in developing, [Elemnt Plus](https://element-plus.org/en-US/) was the main offender in adding unneeded complexity to the project. The components offered looked promising, but implementation of some was much more complex than anticipated and ate in the time-limit. In the future, it's probably better to use more stripped down frameworks for projects like this.
+I hoped to cut time using a framework like  [Elemnt Plus](https://element-plus.org/en-US/) was the main offender in adding unneeded complexity to the project. The components offered looked promising, but implementation of some was much more complex than anticipated and ate in the time-limit. In the future, it's probably better to use more stripped down frameworks for projects like this.
 
 #### Element Plus + Vue + Vite + Code Challenge == 🪢
-Being new to the `vite + vue` ecosystem added to the challenge. Having done multiple game jams, I do enjoy a good sprint from time to time. However, I laied my hopes on a specific feature of a third-party module in hopes to impress. After seeing the [expandable row](https://element-plus.org/en-US/component/table.html#expandable-row) examples for Element Plus's `el-table` I became convinced that by using the expandable table rows to render a summary if each item, dynmically loading from the item's URI and preprocessing with [linkedart.js](https://www.linkedartjs.org/) before sending data to the template, would be the path to success, but all the other new challenges nibbled through the remaining time.
+Being new to the `vite + vue` ecosystem added to the challenge. Having done multiple game jams, I do enjoy a good sprint from time to time. However, I laied my hopes on a specific feature of a third-party module in hopes to impress. After seeing the [expandable row](https://element-plus.org/en-US/component/table.html#expandable-row) examples for Element Plus's `el-table`, I became convinced that by using the expandable rows to render summaries for each item, dynmically loading from the item's URI and preprocessing with [linkedart.js](https://www.linkedartjs.org/) before sending data to the template, would be the path to success, but all the other new challenges nibbled through the remaining time.
+
+## Credits
+
+This ideas in this project hopefully represent my ability to grok the documentation and standards available in the amazing work published by the Vue/Vite/Vue-* ecosystem, The Getty Research Institute, and greater opensource community. 
+I found myself turing to these resources most often.
+
+* [The Getty Vocabularies](https://vocab.getty.edu/)
+* [Getty's API Documentation](https://data.getty.edu/)
+* [Vuejs.org](https://vuejs.org/guide/introduction.html)
+* [the Vite Guide](https://vite.dev/guide/)
+* [Element Plus](https://element-plus.org/en-US/guide/design.html)
 
 ## Notes
 
-### My Frontend Experience
+#### My Frontend Experience
 
 I was given the option to present a front-end app I had written professionally but unfortunately, I don't have any show-able front-end work from the last few years *(read: Trapped in private repos)*
 
-I have gotten deeper into backend development recently, but I have deep roots in front-end develop. Specifically with [AngularJS](https://angularjs.org/). 
+I have gotten deeper into backend development recently, but I have deep roots in front-end development. Specifically with [AngularJS](https://angularjs.org/). 
 The University of Alabama Libraries still uses most of the AngularJS apps I built during my time there as a Senior Fullstack Engineer. 
 Perhaps most notably the "bento box" search component [OneSearch](https://www.lib.ua.edu/#/bento/J.%20Paul%20Getty) - a modular, configurable, and pluggable federated search app. OneSearch made adding new search engines to the frontend easy - just [5 simple steps](https://ualibweb.github.io/oneSearch_ui/#/api/engines). 
 
