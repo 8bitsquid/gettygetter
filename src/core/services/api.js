@@ -1,8 +1,7 @@
 /**
  * Acts as the API gateway for SPARQL related services.
  */
-import sparql from "./sparql";
-import search from "./search";
+import sparql from "./sparql"
 
 /**
  * 
@@ -12,10 +11,9 @@ import search from "./search";
  */
 
 const api = {
-	sparql,
-	search,
-};
+	sparql
+}
 
-export { sparql, search }
+export { sparql }
 
 export default api

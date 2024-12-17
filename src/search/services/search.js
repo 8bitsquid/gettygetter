@@ -1,4 +1,4 @@
-import sparql from './sparql'
+import sparql from '../../core/services/sparql'
 
 
 /**
@@ -21,6 +21,8 @@ function buildSearchQuery(terms) {
 }
 
 
+
+
 /**
  * Searches the SPARQL backend by using a general text search query, and applying
  * default and additional URL params
@@ -36,7 +38,7 @@ function buildSearchQuery(terms) {
 async function search(terms, params) {
 	const queryString = buildSearchQuery(terms)
   const searchParams = {handler: "search", ...params}
-	return await sparql.query(terms, searchParams)
+	return await sparql.query(queryString, searchParams)
 }
 
 export default search

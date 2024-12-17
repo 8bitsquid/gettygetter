@@ -18,8 +18,8 @@ const QUERY_PARAM_KEY = "query"
  * all SPARQL requests
  */
 function getDefaultRequestHeaders() {
-	const headers = new Headers();
-	headers.append("Accept", "application/sparql-results+json");
+	const headers = new Headers()
+	headers.append("Accept", "application/sparql-results+json")
 }
 
 
@@ -37,9 +37,9 @@ function getDefaultRequestHeaders() {
  * @returns
  */
 function buildUrlSearchParams(sparqlQuery, params) {
-	const qp = {handler: 'sparql', ...params};
-	qp[QUERY_PARAM_KEY] = sparqlQuery;
-	return new URLSearchParams(qp);
+	const qp = {handler: 'sparql', ...params}
+	qp[QUERY_PARAM_KEY] = sparqlQuery
+	return new URLSearchParams(qp)
 }
 
 
@@ -57,10 +57,16 @@ function buildUrlSearchParams(sparqlQuery, params) {
  * @returns The full SPARQL backend query URL
  */
 function buildSparqlUrl(sparqlQuery, params = {}, format = DEFAULT_RESPONSE_FORMAT) {
-	const baseUrl = BASE_URL + "." + format;
-	const queryParams = buildUrlSearchParams(sparqlQuery, params);
+	const baseUrl = BASE_URL + "." + format
+	const queryParams = buildUrlSearchParams(sparqlQuery, params)
 
-	return baseUrl + "?" + queryParams.toString();
+	return baseUrl + "?" + queryParams.toString()
+}
+
+function errorHandler(errResponse) {
+	if (typeof errResponse === 'string') {
+		
+	}
 }
 
 /**
@@ -81,16 +87,16 @@ const sparql = {
 	 */
 	async query(sparqlQuery, params) {
 		const queryParams = {handler: "sparql", ...params}
-		const headers = getDefaultRequestHeaders();
-		const url = buildSparqlUrl(sparqlQuery, queryParams);
+		const headers = getDefaultRequestHeaders()
+		const url = buildSparqlUrl(sparqlQuery, queryParams)
 		const req = new Request(url, {
 			method: "GET",
 			headers: headers
-		});
+		})
 
-		return await fetch(req);
+		return await fetch(req)
 
 	},
-};
+}
 
-export default sparql;
+export default sparql

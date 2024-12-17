@@ -8,10 +8,12 @@ import Icons from 'unplugin-icons/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: './',
   plugins: [
     vue(),
     Icons({
-      compiler: 'vue3'
+      compiler: 'vue3',
+      autoInstall: true
     }),
     AutoImport({
       resolvers: [
@@ -30,14 +32,14 @@ export default defineConfig({
       ]
     })
   ],
-  css: {
-    preprocessorOptions: {
-      scss: {
-        additionalData: `@use "./core/style.scss";`
-      }
-    }
-  },
   test: {
-    setupFiles: ['./vitest.setup.js']
+    setupFiles: ['./vitest.setup.js'],
+    environment: 'happy-dom',
+    server: {
+      deps: {
+        inline: ['element-plus']
+      }
+    },
+    reporters: ['verbose']
   }
 })
