@@ -59,7 +59,7 @@ async function runSearch(searchTerms) {
     <el-row class="page-row" justify="center">
       <el-col :span="12">
         <p class="lead">
-          The "Getty Getter" is a bare-bones app that performs limited "full text" queries AAT (Art & Architecture Thesaurus) data from the
+          The "Getty Getter" is a bare-bones app that performs limited "full text" queries of the Art & Architecture Thesaurus (AAT) data from the
           <a href="https://vocab.getty.edu/" target="_blank">Getty Vocabularies: LOD</a> SPARQL endpoint.
         </p>
         <p class="lead">
