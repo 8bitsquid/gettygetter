@@ -47,7 +47,9 @@ $ npm run test
 ## Lessons Learned
 
 #### Unused Parts
-The app is mostly complete, with only one unused composable from my original plans - the [pagination composable](src/core/composables//pagination.js)
+The app is mostly complete, with only one unused composable from my original plans - the [pagination composable](src/core/composables//pagination.js).
+
+It would have been nice to implement the [query](src/query) app module so allow submitting SPARQL query directly, but I left a sample component in that module location to show how we can add new modules to the app.
 
 #### Too many toys
 As with many modern apps, the number of tools and frameworks used inflates development time. Learning the tools and having templated configs in scaffolding is key to reducing toil.
