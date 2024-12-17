@@ -1,7 +1,6 @@
 # Getty GETter
 
-This project represents my first attempt at building a Vue 3 application and is my code sample submission to members of the search committee and Collections Platforms & Data department at [the Getty](https://www.getty.edu/). Documented in a semi "code-journaling" style, the READMEs and code comments found throughout will hopefully clarify my reasoning in the app's design. Since repo is intended for a limited audience,
-the docs assume the reader is familiar with [Vue](https://vuejs.org/) and [Vite](https://vite.dev/).
+This project represents my first attempt at building a Vue 3 application and is my code sample submission to members of the search committee and Collections Platforms & Data department at [the Getty](https://www.getty.edu/). Documented in a semi "code-journaling" style, the READMEs and code comments found throughout will hopefully clarify my reasoning in the app's design. The repo is intended for a limited audience and the docs assume the reader is familiar with [Vue](https://vuejs.org/) and [Vite](https://vite.dev/).
 
 If you'd like to skip the pre-amble and get straight to the docs, See *[Reading the source](#reading-the-source)*. 
 
@@ -9,7 +8,7 @@ If you'd like to skip the pre-amble and get straight to the docs, See *[Reading 
 
 > In roughly a day's worth of work, build an app that features a UI component, populated with data from [UAAT](https://www.getty.edu/research/tools/vocabularies/aat/), [ULAN](https://www.getty.edu/research/tools/vocabularies/ulan/index.html), or any other [Getty API](https://data.getty.edu/).
 
-The first time I built with Vue was [earlier this month](https://github.com/8bitsquid/getty-vue-project). Liking a good challenge, I decided to build the "day's work" app using Vite + Vue 3. After reading through Vue/Vite docs, poking around the [Getty Vocabularies: LOD](https://vocab.getty.edu/), and trying to decipher some almost alchemical SPARQL queries from the Getty Vocab docs, the goal was decided. 
+The first time I built with Vue was [earlier this month](https://github.com/8bitsquid/getty-vue-project). Liking a good challenge, I decided to build the "day's work" app using Vite + Vue 3. After reading through Vue/Vite docs, poking around the [Getty Vocabularies: LOD](https://vocab.getty.edu/), and trying to decipher some, almost alchemical, SPARQL queries from the Getty Vocab docs, the goal in my ind was set. 
 
 ## The Goal
 
