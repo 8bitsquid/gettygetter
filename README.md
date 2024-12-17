@@ -29,7 +29,7 @@ The [src/README](src/README.md) is a good place to start.
 
 ```bash
 # Clone the repo and `cd` into project root
-$ git clone git@github.com:8bitsquid/gettygetter.git && cd gettygetter
+$ git clone https://github.com/8bitsquid/gettygetter.git && cd gettygetter
 
 # Install Node dependencies, build, and run preview
 $ npm install
@@ -49,7 +49,7 @@ $ npm run test
 Ok, total dev time was more ~10hrs. But be honest, I've had many ~~10hr days before.
 
 ### Unused Parts
-The scoped app is componplete and runnabnle. However, the new toys tempted scope creep, and I started pre-planning other features. 
+The app is complete and runnabnle. However, new toys tempted scope creep, and I started pre-planning other features. 
 I left the stubs for these features in for context and hopefully they'll serve as examples of how I would add new modules.
 
 * [pagination composable](src/core/composables//pagination.js) to handle paging state for a pagination component.
@@ -62,6 +62,11 @@ I hoped to cut time using a framework like  [Elemnt Plus](https://element-plus.o
 
 #### Element Plus + Vue + Vite + Code Challenge == 🪢
 Being new to the `vite + vue` ecosystem added to the challenge. Having done multiple game jams, I do enjoy a good sprint from time to time. However, I laied my hopes on a specific feature of a third-party module in hopes to impress. After seeing the [expandable row](https://element-plus.org/en-US/component/table.html#expandable-row) examples for Element Plus's `el-table`, I became convinced that by using the expandable rows to render summaries for each item, dynmically loading from the item's URI and preprocessing with [linkedart.js](https://www.linkedartjs.org/) before sending data to the template, would be the path to success, but all the other new challenges nibbled through the remaining time.
+
+#### Styles and WCAG improvements
+
+Styles need work and body text is way too faint. I was looking for a Vue centric alternative to Bootstrap, but ElementPlus is designed more to be a component library with some styling, rather than a style framework with some components. Improvements [have been mentioned](https://github.com/element-plus/element-plus/discussions/1697), but more more vetting would need to be dome before I would recomment for production.
+
 
 ## Credits
 
