@@ -9,7 +9,7 @@ If you'd like to skip the pre-amble and get straight to the docs, See *[Reading 
 
 > In roughly a day's worth of work, build an app that features a UI component, populated with data from [UAAT](https://www.getty.edu/research/tools/vocabularies/aat/), [ULAN](https://www.getty.edu/research/tools/vocabularies/ulan/index.html), or any other [Getty API](https://data.getty.edu/).
 
-The first time I built with Vue was [earlier this month](https://github.com/8bitsquid/getty-vue-project). Liking a good challenge, I decided to build the "day's work" app using Vite + Vue 3. After reading through Vue/Vite docs, poking around the [Getty Vocabularies: LOD](https://vocab.getty.edu/), and trying to determine how SPARQL isn't alchemny, the goal was decided. 
+The first time I built with Vue was [earlier this month](https://github.com/8bitsquid/getty-vue-project). Liking a good challenge, I decided to build the "day's work" app using Vite + Vue 3. After reading through Vue/Vite docs, poking around the [Getty Vocabularies: LOD](https://vocab.getty.edu/), and trying to decipher some almost alchemical SPARQL queries from the Getty Vocab docs, the goal was decided. 
 
 ## The Goal
 
@@ -62,6 +62,6 @@ Of the frameworks I used, hoping to create short-cuts in developing, [Elemnt Plu
 I was given the option to present a front-end app I have written professionally but unfortunately, I don't have any show-able front-end work from the last few years *(read: Trapped in private repos)*
 
 Although doing heavier backend work recent, I have deep roots in front-end app design. Specifically with [AngularJS](https://angularjs.org/). 
-The [University of Alabama Libraries](https://www.lib.ua.edu/#/home) still uses most of the AngularJS apps I built during my time there as a Senior Fullstack Engineer. 
-Perhaps most notably the ["bento box" search](https://about.galileo.usg.edu/support/what_is_the_galileo_bento_beta_search) component [OneSearch](https://www.lib.ua.edu/#/bento/J.%20Paul%20Getty) - a modular, configurable, and pluggable federated search app. OneSearch made adding new search engines to the frontend easy - just [5 simple steps](https://ualibweb.github.io/oneSearch_ui/#/api/engines).
+The University of Alabama Libraries still uses most of the AngularJS apps I built during my time there as a Senior Fullstack Engineer. 
+Perhaps most notably the "bento box" search component [OneSearch](https://www.lib.ua.edu/#/bento/J.%20Paul%20Getty) - a modular, configurable, and pluggable federated search app. OneSearch made adding new search engines to the frontend easy - just [5 simple steps](https://ualibweb.github.io/oneSearch_ui/#/api/engines).
 
